@@ -619,6 +619,8 @@ document.querySelectorAll('.project-card').forEach(card=>{
     modalExtLink.href=link;
     const existing=modalVideoWrap.querySelector('iframe');
     if(existing)existing.remove();
+    const existingNav=modalVideoWrap.querySelector('.video-nav');
+    if(existingNav)existingNav.remove();
     const existingGallery=modalVideoWrap.querySelector('.modal-gallery');
     if(existingGallery)existingGallery.remove();
     if(instagram&&!yt){
